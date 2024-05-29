@@ -39,10 +39,24 @@ $ forge fmt
 $ forge snapshot
 ```
 
-### Anvil
+### Start Anvil
 
 ```shell
 $ anvil
+```
+
+### Deploy Locally
+
+```shell
+forge script script/EtheREP.s.sol:EtheREPDeploy --fork-url http://localhost:8545 --broadcast
+```
+
+```shell
+forge script script/EtheTimelock.s.sol:EtheTimelockDeploy --fork-url http://localhost:8545 --broadcast
+```
+
+```shell
+forge script script/EtheGovernor.s.sol:EtheGovernorDeploy --fork-url http://localhost:8545 --broadcast
 ```
 
 ### Deploy
